@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header mb-5 position-fixed w-100 bg-dark">
+      <div class="container">
+        <nav class="navbar navbar-dark bg-dark shadow">
+          <div class="container-fluid">
+            <a class="navbar-brand">Navbar</a>
+            <form class="d-flex pok__form flex-wrap">
+              <input
+                class="form-control me-2 form-input "
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              
+              <select class="form__select form__category me-2 rounded-2" name="form_select">
+                <option value="ALL">All</option>
+              </select>
+
+              <input class="start__num me-2 rounded-2" type="number" name="start_num" aria-label="start_number" placeholder="Start Number">
+
+              <input class="end__num me-2 rounded-2" type="number" name="end_num" aria-label="end_number" placeholder="End Number">
+
+              <select class="form__select form__Sort me-2 rounded-2" name="form_select">
+                <option class="sort__option" value="a-z">A-Z</option>
+                <option class="sort__option" value="z-a">Z-A</option>
+                <option class="sort__option" value="height-toheight">Low to Height</option>
+                <option class="sort__option" value="height-tolow">Height to Low </option>
+                <option class="sort__option" value="weight-toheigh">weight to Up</option>
+                <option class="sort__option" value="weight-tolow">weight to Down</option>
+              </select>
+
+              <button class="btn our__btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="pokemon">
+        <div class="container">
+          <ul class="pokemon__list w-100">
+
+          </ul>
+
+          <template>
+            <li class="pocemon__item">
+              
+            </li>
+          </template>
+
+          <div>
+            <!-- <button type="button" class=" pocemon__btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button> -->
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header justify-content-start bg-info">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                  </div>
+                  <ul class="modal-body list-unstyled"></ul>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/pokemons.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
